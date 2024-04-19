@@ -1,0 +1,7 @@
+docker build -t python-example .
+
+kubectl apply -f config\deployment.yml
+
+kubectl get all
+
+kubectl rollout status deployment/python-example
